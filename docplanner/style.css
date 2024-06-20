@@ -18,6 +18,7 @@
     position: fixed;
     top:0px;
     align-items: center;
+    z-index: 99;
 }
 nav{
     width:70%;
@@ -90,18 +91,29 @@ nav li:hover{
     justify-content:space-between ;
     background-color:#00b39b;
     color:white;
+    transition:all 0.3s
+}
+.card:hover{
+    background-color:#029e8a
+}
+.card2:hover{
+    background-color:#3270c2
+}
+.card3:hover{
+    background-color: #141c26;
 }
 .card h1{
     font-weight: 300;
 }
-.card p{
-    font-size: 22px
-}
+
 .card2{
     background-color: #3d83df;
 }
 .card3{
     background-color: #1b2734;
+}
+.card p{
+    font-size: 22px
 }
 .card select{
     background-color: transparent;
@@ -157,6 +169,12 @@ svg{
     opacity: 100%;
 
 }
+.doctoralia{
+    width:17%;
+}
+.jameda{
+    width:14%;
+}
 .tuo{
     width:20%;
 }
@@ -165,6 +183,99 @@ svg{
 }
 .myderedm{
     width: 20%;
+}
+svg{
+    color:rgb(171, 171, 171);
+    tansition:all 0.2s;
+}
+svg:hover{
+    color:#00b39b
+}
+.global_compagnie img{
+    opacity: 30%;
+    filter: invert(0%) sepia(50%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(102%);
+}
+.global_compagnie img:hover{ 
+    opacity:100%;
+    filter:none;
+}
+/* health container */
+.health_container{
+    width:100%;
+    height:700px;
+    background-color: #e5faf8;
+    position:relative;
+    overflow: hidden;
+}
+.health{
+    height: inherit;
+    width:70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.health_left{
+    margin-top: 30px;
+    width:40%;
+    height:650px;
+}
+.health_right{
+    width:45%;
+    height:650px;
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;;
+}
+.health_card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width:45%;
+    height:300px;
+    padding: 5px;
+    border-radius: 8px ;
+    box-shadow: -4px -1px 43px -14px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: -4px -1px 43px -14px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -4px -1px 43px -14px rgba(0, 0, 0,0.2);
+}
+.health h1{
+    font-size: 28px;
+    letter-spacing: 1.6;
+    color: #00b39b;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+#txt_world{
+    text-align: start;
+}
+.health_card p{
+    text-align: center;
+}
+.health_card img{
+    width:15%;
+}
+#logo{
+    position: absolute;
+    width:600px;
+    top:250px;
+    left:100px;
+}
+.tomargin{
+    margin-top: 20px;
+}
+.nomargin{
+    margin-top: -20px;
+}
+.health p{
+    margin-top: 10px;
+    color:rgb(110, 108, 108);
+    font-weight: 400;
+    font-size: smaller;
 }
 /* improve */
 .container2{
@@ -182,6 +293,7 @@ svg{
     font-weight: 400;
     line-height: 1.6;
 }
+
 /* countries */
 .countries{
     display: flex;
